@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Fight</title>
+</head>
+
+<body>
+    <div class="top-container rl">
+        <div class="fl jf-fl-end bottom-container ab">
+            <!-- player health -->
+            <div class="rl fl bar-border bar-width bar-border-left">
+                <div class="health-bar bar-size bar-width"></div>
+                <div id="player-health" class="bar-position bar-color ab bar-width"></div>
+            </div>
+            <!-- timer -->
+            <div id="timer" class="fl timer-bar text-center bar-border bar-border-left bar-border-right">90</div>
+            <!-- enemy health -->
+            <div class="rl bar-border bar-width bar-border-right">
+                <div class="health-bar bar-size"></div>
+                <div id="enemy-health" class="bar-position hp-bar bar-color ab"></div>
+            </div>
+            <div></div>
+        </div>
+        <div id="display-text" class="ab text-center bar-position hp-bar score-screen">Tie</div>
+        <canvas id="GameScreen" width="1024px" height="576px"></canvas>
+    </div>
+
+
+    </canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"
+        integrity="sha512-gsEItzcNkWxfxHjr4BaEZAd9YuRWYjxnj7c/yukcZ0/nWehUb5TjJNyyv1ApCU2DFH/qgw+stFZHPOKnoQnIuQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/classes.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
